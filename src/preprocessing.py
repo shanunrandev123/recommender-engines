@@ -4,7 +4,7 @@ import pandas as pd
 from collections import Counter
 
 
-df = pd.read_csv(r'C:\Users\Asus\Documents\recommender_engines\edited_rating.csv')
+df = pd.read_csv(r'/edited_rating.csv')
 
 print(df.head())
 

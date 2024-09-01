@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
 
-df = pd.read_csv(r'C:\Users\Asus\Documents\recommender_engines\small_rating.csv')
+df = pd.read_csv(r'/small_rating.csv')
 
 print(df.head())
 
@@ -86,19 +86,19 @@ def update_usermovie2rating_test(row):
 df_test.apply(update_usermovie2rating_test, axis=1)
 
 
-with open('user2movie.json', 'wb') as f:
+with open('../data/user2movie.json', 'wb') as f:
     pickle.dump(user2movie, f)
 
 
-with open('movie2user.json', 'wb') as f:
+with open('../data/movie2user.json', 'wb') as f:
     pickle.dump(movie2user, f)
     
 
-with open('usermovie2rating.json', 'wb') as f:
+with open('../data/usermovie2rating.json', 'wb') as f:
     pickle.dump(usermovie2rating, f)
     
     
-with open('usermovie2rating_test.json', 'wb') as f:
+with open('../data/usermovie2rating_test.json', 'wb') as f:
     pickle.dump(usermovie2rating_test, f)
     
     

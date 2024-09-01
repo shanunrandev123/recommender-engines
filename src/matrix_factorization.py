@@ -6,18 +6,18 @@ from sklearn.utils import shuffle
 
 from datetime import datetime
 
-with open (r'C:/Users/Asus/Documents/recommender_engines/user2movie.json', 'rb') as f:
+with open (r'/user2movie.json', 'rb') as f:
     user2movie = pickle.load(f)
     
     
-with open (r'C:/Users/Asus/Documents/recommender_engines/movie2user.json', 'rb') as f:
+with open (r'/movie2user.json', 'rb') as f:
     movie2user = pickle.load(f)
     
-with open (r'C:/Users/Asus/Documents/recommender_engines/usermovie2rating.json', 'rb') as f:
+with open (r'/usermovie2rating.json', 'rb') as f:
     usermovie2rating = pickle.load(f)
     
     
-with open (r'C:/Users/Asus/Documents/recommender_engines/usermovie2rating_test.json', 'rb') as f:
+with open (r'/usermovie2rating_test.json', 'rb') as f:
     usermovie2rating_test = pickle.load(f)
     
     
